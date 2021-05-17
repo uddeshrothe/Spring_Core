@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="question1" class="com.springcore.Question"> 
+			<property name="questionId" value="1"/>
+			<property name="question" value="Name few continents: "/>
+			
+			
+			<property name="listAnswer">
+					<list>
+							<value>Asia</value>
+							<value>Africa</value>
+					</list>
+			</property>
+				<property name="setAnswer">
+					<set>
+							<value>Antarctica</value>
+							<value>North America</value>
+					</set>
+			</property>
+				<property name="mapAnswer">
+					<map>
+							<entry key="1" value="Europe"/>
+							<entry key="2" value="South America"/>
+					</map>
+			</property>
+	</bean>
+</beans>
